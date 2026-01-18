@@ -1,3 +1,43 @@
-body{
+body {
     background-color: rgb(113, 225, 150);
+}
+
+header {
+    background-color: #1A0B2E;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0px;
+    gap: 32px;
+    color: white;
+}
+
+.navbtn {
+    display: flex;
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding:12px 16px;
+    height: 44px;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbtn h6 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.navbtn img {
+    width: 1em;
+    height: 1em;
 }
