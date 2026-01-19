@@ -1,5 +1,6 @@
 body {
     background-color: rgb(113, 225, 150);
+    max-width: 1600px;
 }
 
 header {
@@ -26,7 +27,7 @@ ul {
     color: white;
     border: none;
     border-radius: 100px;
-    padding:12px 16px;
+    padding: 12px 16px;
     height: 44px;
     align-items: center;
     gap: 5px;
@@ -40,4 +41,124 @@ ul {
 .navbtn img {
     width: 1em;
     height: 1em;
+}
+
+.hero {
+    background-image: url(./assets/hero-bg.png);
+    background-size: cover;
+    color: white;
+    justify-items: center;
+    padding: 101px;
+}
+
+.microphone {
+    display: flex;
+}
+
+.microphone img {
+    background-image: url(./assets/hero-circle.png);
+    background-size: 350px 350px;
+    background-position: center;
+    width: 116px;
+    height: 175px;
+    padding: 77px 116px 97px 116px;
+}
+
+.badge {
+    position: absolute;
+    z-index: 3;
+    background: #00FF88;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: black;
+    justify-items: end;
+}
+
+.about-content{
+        display: contents;
+}
+.banner-content h1 {
+    font-size: 4em;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.banner-content p {
+    font-size: 1em;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.banner-content .btn1 {
+    display: flex;
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 12px 16px;
+    height: 44px;
+    align-items: center;
+    gap: 5px;
+}
+
+.banner-btn {
+    display: flex;
+    gap: 8px;
+}
+
+.banner-content .btn2 {
+    display: flex;
+    background: none;
+    color: #38e721;
+    border: solid 1px green;
+    border-radius: 100px;
+    padding: 12px 16px;
+    height: 44px;
+    align-items: center;
+    gap: 5px;
+}
+
+.about-content {
+    justify-items: center;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.about-content p {
+    text-align-last: center;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 20px;
+    text-align: center;
+    opacity: 80%;
+}
+
+.about-cards-container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 80px;
+}
+.card-content{
+    text-align: center;
+gap: 16px;
+}
+.card-content h3{
+    font-size: 3em;
+    font-weight: 900;
+    color: #00FF88;
+}
+.card-content p{
+        font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 80%;
 }
