@@ -74,9 +74,14 @@ ul {
     justify-items: end;
 }
 
-.about-content{
-        display: contents;
+.about-content {
+    display: contents;
 }
+
+.banner-content {
+    display: contents;
+}
+
 .banner-content h1 {
     font-size: 4em;
     font-weight: 800;
@@ -103,7 +108,8 @@ ul {
 
 .banner-btn {
     display: flex;
-    gap: 8px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .banner-content .btn2 {
@@ -116,6 +122,10 @@ ul {
     height: 44px;
     align-items: center;
     gap: 5px;
+}
+
+.About {
+    background-color: #1A0B2E;
 }
 
 .about-content {
@@ -140,25 +150,84 @@ ul {
     opacity: 80%;
 }
 
-.about-cards-container{
+.about-cards-container {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
     padding: 80px;
 }
-.card-content{
+
+.card-content {
     text-align: center;
-gap: 16px;
+    gap: 16px;
 }
-.card-content h3{
+
+.card-content h3 {
     font-size: 3em;
     font-weight: 900;
     color: #00FF88;
 }
-.card-content p{
-        font-size: 1em;
+
+.card-content p {
+    font-size: 1em;
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
     opacity: 80%;
 }
+
+.why-techwave .why-header {
+    text-align-last: center;
+}
+
+.why-techwave h3 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 40px 200px 120px 200px;
+}
+
+.grid-content{
+        padding: 40px;
+    background-color: #4d01abb8;
+}
+
+.grid-content h4{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.grid-content p{
+    font-size: 1em;
+    font-weight: 400;
+    opacity: 70%;
+    color: #FFFFFF;
+}
+.grid-card-1 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.grid-card-2, .grid-card-3, .grid-card-4{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.grid-card-5{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.episode .episode-header h3{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+
