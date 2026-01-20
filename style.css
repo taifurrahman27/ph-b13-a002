@@ -193,41 +193,45 @@ ul {
     margin: 40px 200px 120px 200px;
 }
 
-.grid-content{
-        padding: 40px;
+.grid-content {
+    padding: 40px;
     background-color: #4d01abb8;
 }
 
-.grid-content h4{
+.grid-content h4 {
     font-size: 1.5em;
     font-weight: 700;
     color: #FFFFFF;
 }
 
-.grid-content p{
+.grid-content p {
     font-size: 1em;
     font-weight: 400;
     opacity: 70%;
     color: #FFFFFF;
 }
+
 .grid-card-1 {
     grid-column: span 1;
     grid-row: span 2;
 }
-.grid-card-2, .grid-card-3, .grid-card-4{
+
+.grid-card-2,
+.grid-card-3,
+.grid-card-4 {
     grid-column: span 2;
     grid-row: span 1;
 }
-.grid-card-5{
+
+.grid-card-5 {
     grid-column: span 1;
     grid-row: span 1;
 }
 
-.episode .episode-header h3{
+.episode .episode-header h3 {
     text-align: center;
     font-size: 3em;
     font-weight: 700;
     color: #FFFFFF;
 }
-
 
