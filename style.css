@@ -1,6 +1,8 @@
 body {
-    background-color: rgb(113, 225, 150);
+    background-color: #1A0B2E;
     max-width: 1600px;
+    font-family: inter;
+    
 }
 
 header {
@@ -320,7 +322,7 @@ ul {
 }
 
 .footer {
-background-image: url(./assets/footer-bg.png);
+    background-image: url(./assets/footer-bg.png);
     padding: 120px;
     background-size: cover;
 }
@@ -349,11 +351,11 @@ background-image: url(./assets/footer-bg.png);
     display: flex;
 }
 
-.footer .footer-icons li span{
+.footer .footer-icons li span {
     opacity: 70%;
 }
 
-.footer .footer-icons .copy-right{
+.footer .copy-right {
     display: flex;
     justify-content: center;
     color: white;
