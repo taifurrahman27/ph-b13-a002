@@ -15,6 +15,10 @@ nav {
     align-items: center;
 }
 
+.hamburger-icon {
+    display: none;
+}
+
 ul {
     display: flex;
     list-style: none;
@@ -80,13 +84,21 @@ ul {
     justify-items: end;
     top: 1.5rem;
     left: 16rem;
-      animation: zoomInOut 3s ease-in-out infinite;
+    animation: zoomInOut 3s ease-in-out infinite;
 }
 
 @keyframes zoomInOut {
-  0%   { transform: scale(1); }
-  50%  { transform: scale(1.25); }
-  100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .about-content {
@@ -284,9 +296,11 @@ ul {
     display: flex;
     gap: 6px;
 }
-.play-video{
+
+.play-video {
     width: 380px;
 }
+
 .host {
     background-color: #1A0B2E;
     margin: 120px 200px;
@@ -342,7 +356,7 @@ ul {
     background-image: url(./assets/footer-bg.png);
     padding: 120px;
     background-size: cover;
-        background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -380,25 +394,72 @@ ul {
     color: white;
 }
 
-button{
+button {
     cursor: pointer;
     transition: transform 0.15s ease-out;
 }
-button:hover{
-transform: scale(1.15);    
+
+button:hover {
+    transform: scale(1.15);
 }
 
 @media screen and (max-width: 576px) {
-    * {
-        background-color: #165c3b;
-    }
-    .menu{
-            display: none;
+    .menu {
+        display: none;
 
     }
-    .navbtn{
+
+    .navbtn {
         display: none;
     }
 
+    .hamburger-icon {
+        display: block;
+    }
 
+    .about-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin: 40px 20px;
+    }
+
+    .videos {
+        flex-wrap: wrap;
+    }
+
+    .episode {
+        padding: 40px 20px;
+    }
+
+    .host-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .host {
+        margin: 40px 20px;
+
+    }
+
+    .host-container {
+        text-align: center;
+    }
+
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer .footer-icons {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .footer-icons img {
+        height: 20px;
+        width: 20px;
+    }
 }
