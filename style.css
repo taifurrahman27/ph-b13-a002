@@ -2,7 +2,7 @@ body {
     background-color: #1A0B2E;
     max-width: 1600px;
     font-family: inter;
-    
+    margin: 0 auto;
 }
 
 header {
@@ -51,10 +51,14 @@ ul {
     color: white;
     justify-items: center;
     padding: 101px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .microphone {
     display: flex;
+    position: relative;
+
 }
 
 .microphone img {
@@ -74,6 +78,15 @@ ul {
     border-radius: 15px;
     color: black;
     justify-items: end;
+    top: 1.5rem;
+    left: 16rem;
+      animation: zoomInOut 3s ease-in-out infinite;
+}
+
+@keyframes zoomInOut {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.25); }
+  100% { transform: scale(1); }
 }
 
 .about-content {
@@ -193,11 +206,13 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin: 40px 200px 120px 200px;
+    gap: 30px;
 }
 
 .grid-content {
     padding: 40px;
     background-color: #4d01abb8;
+    border-radius: 40px;
 }
 
 .grid-content h4 {
@@ -269,7 +284,9 @@ ul {
     display: flex;
     gap: 6px;
 }
-
+.play-video{
+    width: 380px;
+}
 .host {
     background-color: #1A0B2E;
     margin: 120px 200px;
@@ -325,6 +342,8 @@ ul {
     background-image: url(./assets/footer-bg.png);
     padding: 120px;
     background-size: cover;
+        background-position: center;
+    background-repeat: no-repeat;
 }
 
 .footer .footer-logo {
@@ -359,4 +378,27 @@ ul {
     display: flex;
     justify-content: center;
     color: white;
+}
+
+button{
+    cursor: pointer;
+    transition: transform 0.15s ease-out;
+}
+button:hover{
+transform: scale(1.15);    
+}
+
+@media screen and (max-width: 576px) {
+    * {
+        background-color: #165c3b;
+    }
+    .menu{
+            display: none;
+
+    }
+    .navbtn{
+        display: none;
+    }
+
+
 }
